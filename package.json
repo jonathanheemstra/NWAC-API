@@ -1,0 +1,36 @@
+{
+  "name": "NWAC-API",
+  "version": "1.0.0",
+  "description": "Simple API for Northwest Avalanche Center data",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "DEBUG='NWAC*' gulp test",
+    "start": "DEBUG='NWAC*' gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanheemstra/NWAC-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathanheemstra/NWAC-API/issues"
+  },
+  "homepage": "https://github.com/jonathanheemstra/NWAC-API#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-nodemon": "^2.2.1",
+    "superagent": "^3.3.1"
+  },
+  "dependencies": {
+    "debug": "^2.6.0",
+    "express": "^4.14.0"
+  }
+}
