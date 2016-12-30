@@ -23,13 +23,13 @@ gulp.task('dev', function() {
     script: 'server.js',
     ext: 'js html',
     ignore: ['node_modules'],
-    // watch: ['*.js', '**/*.js', '**/**/*.js'],
+    watch: ['*'],
     env: { 'NODE_ENV': 'development' },
     tasks: ['lint', 'test']
   });
   stream
     .on('restart', function() {
-      console.log('Restarted');
+      console.log('Restarted Server');
     })
     .on('crash', function() {
       console.error('Applicaiton has crashed');
